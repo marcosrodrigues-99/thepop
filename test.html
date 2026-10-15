@@ -1,0 +1,330 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE POP - Eventos da Cidade</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TOPO E MENU -->
+
+    <div class="topo">
+
+        <div>
+            <div class="logo">THE <span>POP</span></div>
+            <div class="subtitulo-logo">EVENTOS DA CIDADE</div>
+        </div>
+
+        <div class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#eventos">Eventos</a>
+            <a href="#locais">Locais</a>
+            <a href="#categorias">Categorias</a>
+            <a href="#administracao">Área administrativa</a>
+        </div>
+
+    </div>
+
+    <!-- APRESENTAÇÃO -->
+
+    <div class="banner" id="inicio">
+
+        <h1>O que acontece<br>na <span>nossa cidade?</span></h1>
+
+        <p>
+            O THE POP é o portal de eventos da Secretaria de Cultura,
+            reunindo informações para você aproveitar o melhor da cidade.
+        </p>
+
+    </div>
+
+    <!-- PESQUISA -->
+
+    <form class="pesquisa" action="#eventos" method="get">
+
+        <div class="campo">
+            <label for="nome">Nome do evento</label>
+            <input type="text" id="nome" name="nome"
+                placeholder="Pesquise por um evento">
+        </div>
+
+        <div class="campo">
+            <label for="categoria">Categoria</label>
+
+            <select id="categoria" name="categoria">
+                <option value="">Todas as categorias</option>
+                <option>Música</option>
+                <option>Teatro</option>
+                <option>Esportes</option>
+                <option>Gastronomia</option>
+                <option>Arte e Cultura</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data">
+        </div>
+
+        <div class="campo">
+            <label for="local">Local</label>
+
+            <select id="local" name="local">
+                <option value="">Todos os locais</option>
+                <option>Centro</option>
+                <option>Zona Norte</option>
+                <option>Zona Sul</option>
+                <option>Zona Leste</option>
+            </select>
+        </div>
+
+        <button type="submit">Pesquisar</button>
+
+    </form>
+
+    <!-- EVENTO EM DESTAQUE -->
+
+    <div class="conteudo">
+
+        <h2 class="titulo">Evento em destaque</h2>
+
+        <p class="descricao">
+            Confira um dos eventos em evidência na cidade.
+        </p>
+
+        <div class="destaque">
+
+            <div>
+                <span class="etiqueta">Música</span>
+
+                <h3>Festival de Música da Cidade</h3>
+
+                <p>
+                    Data: 10 a 12 de outubro de 2026<br>
+                    Local: Centro de Convenções
+                </p>
+
+                <a href="#eventos" class="botao">Saiba mais</a>
+            </div>
+
+            <div class="destaque-frase">
+                <p>SHOWS • CULTURA • LAZER</p>
+                <h2>Viva a cidade!</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CATEGORIAS -->
+
+    <div class="conteudo" id="categorias">
+
+        <h2 class="titulo">Categorias</h2>
+
+        <p class="descricao">
+            Encontre eventos de acordo com seus interesses.
+        </p>
+
+        <div class="categorias">
+
+            <a href="#eventos" class="categoria musica">
+                ♫<br><br>Música
+            </a>
+
+            <a href="#eventos" class="categoria teatro">
+                ♧<br><br>Teatro
+            </a>
+
+            <a href="#eventos" class="categoria esportes">
+                ⚽<br><br>Esportes
+            </a>
+
+            <a href="#eventos" class="categoria gastronomia">
+                ♨<br><br>Gastronomia
+            </a>
+
+            <a href="#eventos" class="categoria arte">
+                ◉<br><br>Arte e Cultura
+            </a>
+
+            <a href="#eventos" class="categoria outros">
+                ☆<br><br>Outros
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- PRÓXIMOS EVENTOS -->
+
+    <div class="conteudo" id="eventos">
+
+        <h2 class="titulo">Próximos eventos</h2>
+
+        <p class="descricao">
+            Confira alguns eventos programados para a cidade.
+        </p>
+
+        <div class="eventos">
+
+            <div class="evento">
+
+                <div class="evento-imagem">♫</div>
+
+                <div class="evento-info">
+                    <span class="etiqueta">Música</span>
+                    <h3>Show de Rock Nacional</h3>
+                    <p>Data: 02/11/2026</p>
+                    <p>Local: Praça da Liberdade</p>
+                    <a href="#eventos">Saiba mais</a>
+                </div>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="evento-imagem">♬</div>
+
+                <div class="evento-info">
+                    <span class="etiqueta">Teatro</span>
+                    <h3>Espetáculo Teatral</h3>
+                    <p>Data: 05/11/2026</p>
+                    <p>Local: Teatro Municipal</p>
+                    <a href="#eventos">Saiba mais</a>
+                </div>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="evento-imagem">♨</div>
+
+                <div class="evento-info">
+                    <span class="etiqueta">Gastronomia</span>
+                    <h3>Festival Gastronômico</h3>
+                    <p>Data: 08/11/2026</p>
+                    <p>Local: Parque da Cidadania</p>
+                    <a href="#eventos">Saiba mais</a>
+                </div>
+
+            </div>
+
+            <div class="evento">
+
+                <div class="evento-imagem">◉</div>
+
+                <div class="evento-info">
+                    <span class="etiqueta">Arte</span>
+                    <h3>Exposição de Arte</h3>
+                    <p>Data: 12/11/2026</p>
+                    <p>Local: Galeria Municipal</p>
+                    <a href="#eventos">Saiba mais</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SECRETARIA DE CULTURA -->
+
+    <div class="conteudo" id="locais">
+
+        <div class="institucional">
+
+            <div>
+                <h2>Secretaria de Cultura</h2>
+
+                <p>
+                    O THE POP tem como objetivo divulgar os eventos
+                    da cidade, valorizar os artistas locais e facilitar
+                    o acesso da população à cultura, ao esporte e ao lazer.
+                </p>
+            </div>
+
+            <a href="#rodape" class="botao">
+                Informações institucionais
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- ÁREA ADMINISTRATIVA -->
+
+    <div class="conteudo" id="administracao">
+
+        <h2 class="titulo">Área administrativa</h2>
+
+        <p class="descricao">
+            Espaço destinado aos administradores autorizados
+            pela Secretaria de Cultura.
+        </p>
+
+        <p>
+            O acesso ao cadastro e à edição de eventos deve ser
+            protegido por login e senha.
+        </p>
+
+        <p>
+            <a href="#inicio" class="botao">Voltar ao início</a>
+        </p>
+
+    </div>
+
+    <!-- RODAPÉ -->
+
+    <div class="rodape" id="rodape">
+
+        <div class="rodape-conteudo">
+
+            <div>
+                <div class="logo logo-rodape">
+                    THE <span>POP</span>
+                </div>
+
+                <p>Eventos da Cidade</p>
+            </div>
+
+            <div>
+                <h3>Navegação</h3>
+                <a href="#inicio">Início</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#locais">Locais</a>
+                <a href="#categorias">Categorias</a>
+            </div>
+
+            <div>
+                <h3>Institucional</h3>
+                <a href="#locais">Secretaria de Cultura</a>
+                <a href="#rodape">Contato</a>
+                <a href="#rodape">Acessibilidade</a>
+            </div>
+
+            <div>
+                <h3>Informações</h3>
+                <p>Portal de divulgação de eventos</p>
+                <p>Secretaria de Cultura</p>
+            </div>
+
+        </div>
+
+        <div class="direitos">
+            THE POP - Eventos da Cidade
+            <br><br>
+            Portal demonstrativo para projeto acadêmico.
+        </div>
+
+    </div>
+
+</body>
+</html>
